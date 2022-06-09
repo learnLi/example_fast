@@ -1,0 +1,19 @@
+{
+    "name": "administrator/example_fast",
+    "autoload": {
+        "psr-4": {
+            "Administrator\\ExampleFast\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lishihua",
+            "email": "893164876@qq.com"
+        }
+    ],
+    "require": {
+        "workerman/workerman": "^4.0",
+        "jaeger/querylist": "^4.2",
+      "ext-json": "*"
+    }
+}
