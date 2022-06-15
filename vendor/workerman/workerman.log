@@ -6,3 +6,25 @@ Stack trace:
 #3 F:\phpProject\example_fast\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
 #4 F:\phpProject\example_fast\index.php(25): Workerman\Worker::runAll()
 #5 {main}
+2022-06-09 21:51:24 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught ArgumentCountError: Too few arguments to function {closure}(), 0 passed in D:\code\php\example_fast\vendor\workerman\workerman\Events\Select.php on line 233 and exactly 1 expected in D:\code\php\example_fast\bin\spider_one.php:13
+Stack trace:
+#0 D:\code\php\example_fast\vendor\workerman\workerman\Events\Select.php(233): {closure}()
+#1 D:\code\php\example_fast\vendor\workerman\workerman\Events\Select.php(283): Workerman\Events\Select->tick()
+#2 D:\code\php\example_fast\vendor\workerman\workerman\Worker.php(2435): Workerman\Events\Select->loop()
+#3 D:\code\php\example_fast\vendor\workerman\workerman\Worker.php(1430): Workerman\Worker->run()
+#4 D:\code\php\example_fast\vendor\workerman\workerman\Worker.php(1373): Workerman\Worker::forkWorkersForWindows()
+#5 D:\code\php\example_fast\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#6 D:\code\php\example_fast\bin\spider_one.php(20): Workerman\Worker::runAll()
+#7 {main}
+  thrown in D:\code\php\example_fast\bin\spider_one.php on line 13"
+2022-06-09 21:52:14 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught ArgumentCountError: Too few arguments to function {closure}(), 0 passed in D:\code\php\example_fast\vendor\workerman\workerman\Events\Select.php on line 233 and exactly 1 expected in D:\code\php\example_fast\bin\spider_one.php:13
+Stack trace:
+#0 D:\code\php\example_fast\vendor\workerman\workerman\Events\Select.php(233): {closure}()
+#1 D:\code\php\example_fast\vendor\workerman\workerman\Events\Select.php(283): Workerman\Events\Select->tick()
+#2 D:\code\php\example_fast\vendor\workerman\workerman\Worker.php(2435): Workerman\Events\Select->loop()
+#3 D:\code\php\example_fast\vendor\workerman\workerman\Worker.php(1430): Workerman\Worker->run()
+#4 D:\code\php\example_fast\vendor\workerman\workerman\Worker.php(1373): Workerman\Worker::forkWorkersForWindows()
+#5 D:\code\php\example_fast\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#6 D:\code\php\example_fast\bin\spider_one.php(21): Workerman\Worker::runAll()
+#7 {main}
+  thrown in D:\code\php\example_fast\bin\spider_one.php on line 13"

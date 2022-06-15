@@ -13,11 +13,13 @@ define("DS", DIRECTORY_SEPARATOR);
 define("publicDir", __DIR__.DS.'public');
 define("htmlDir", publicDir.DS.'html');
 define("imageDir", publicDir.DS.'image');
-define("jsonDir", publicDir.DS.'json');
+define("dataDir", publicDir.DS. 'data');
 
 $baseUrl = "http://www.1fang.wang";
 
 $baseHtml = htmlDir.DS.'index.html';
+
+
 
 
 if ( ! file_exists($baseHtml)) {
@@ -31,6 +33,7 @@ if ( ! file_exists($baseHtml)) {
 } else {
     $html = file_get_contents($baseHtml);
 }
+
 
 $html = $html ? QueryList::html($html) : QueryList::get($baseUrl);
 
@@ -106,12 +109,13 @@ $hot = $html->rules([
 
 
 
-$xmls = Utils::xml_encode($hotHouse);
+$xmls = Utils::xml_encode($async);
 
-$result = file_put_contents(jsonDir.DS."nav.xml", $xmls);
+$result = file_put_contents(dataDir.DS."nav.xml", $xmls);
 if ($result) {
     echo "写入xml成功" . PHP_EOL;
 }
+
 
 
 

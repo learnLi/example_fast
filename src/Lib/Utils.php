@@ -9,9 +9,9 @@ class Utils
     static function xml_encode($data = [], $encoding = 'utf-8', $root = 'root')
     {
         $xml = '<?xml version="1.0" encoding="'.$encoding.'"?>';
-        $xml .= "<$root>";
+        $xml .= "<".$root.">";
         $xml .= self::data_to_xml($data);
-        $xml .= "</$root>";
+        $xml .= "</".$root.">";
         return $xml;
     }
 
