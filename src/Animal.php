@@ -46,7 +46,6 @@ class Animal
 
     public function rule(): Animal
     {
-        // dh
         return $this;
     }
 
