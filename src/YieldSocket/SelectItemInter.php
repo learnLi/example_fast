@@ -2,6 +2,8 @@
 
 namespace Administrator\ExampleFast\YieldSocket;
 
+use Administrator\ExampleFast\YieldStreamSocket\TcpConnection;
+
 /**
  * Interface SelectItemInter
  * select连接池 子项
@@ -22,4 +24,9 @@ interface SelectItemInter
     const Se_Sec_True = 1;
 
     public function __construct(array $connections = array(), array $reads = array(), $writes = null, $_e = null);
+
+
+    public function add(TcpConnection $connect);
+
+    public function delete(TcpConnection $connect);
 }

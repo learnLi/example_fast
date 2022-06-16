@@ -3,12 +3,16 @@
 namespace Administrator\ExampleFast\YieldSocket;
 
 
-interface SelectInter
+use Administrator\ExampleFast\YieldStreamSocket\SelectItem;
+
+interface SelectInter extends \Iterator
 {
     // 最大select轮询数组
     const Max_select = 10;
 
-    public function addItem(SelectItemInter $item);
+    public function __construct($count);
+
+    public function addItem(SelectItem $item);
 
     public function toArray();
 

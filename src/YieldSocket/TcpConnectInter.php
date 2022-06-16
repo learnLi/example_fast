@@ -1,7 +1,7 @@
 <?php
 namespace Administrator\ExampleFast\YieldSocket;
 
-interface TcpConnectInter
+interface TcpConnectInter extends SocketBuffer
 {
     
     public function __construct($client);
@@ -13,7 +13,7 @@ interface TcpConnectInter
 
     public function getUid();
 
-    public function close();
+    public function close($buffer);
 
     // 检查uid是否在线
     public static function CheckUid($uid);
